@@ -125,6 +125,11 @@ const KeypadMatrixDiagram = lazy(() =>
     default: module.KeypadMatrixDiagram,
   }))
 );
+const PinoutAD0AD15 = lazy(() => import("./PinoutAD0AD15"));
+const ReadCycleTiming = lazy(() => import("./ReadCycleTiming"));
+const MovInstructionEncoding = lazy(() => import("./MovInstructionEncoding"));
+const InterruptStackPush = lazy(() => import("./InterruptStackPush"));
+const InterruptVectorTable = lazy(() => import("./InterruptVectorTable"));
 
 const SpiralModelDiagram = lazy(() => import("./SpiralModelDiagram"));
 const WaterfallModelDiagram = lazy(() => import("./WaterfallModelDiagram"));
@@ -209,6 +214,16 @@ const diagramMap: Record<string, LazyExoticComponent<ComponentType>> = {
   "cs3005-unit2-q37": StepperMotorDiagram,
   "cs3005-unit2-q38": ArduinoPinsDiagram,
   "cs3005-unit2-q39": KeypadMatrixDiagram,
+  "cs3005-unit3-q6": PinoutAD0AD15,
+  "cs3005-unit3-q7": ReadCycleTiming,
+  "cs3005-unit3-q8": MovInstructionEncoding,
+  "cs3005-unit3-q9": MovInstructionEncoding,
+  "cs3005-unit3-q10": MovInstructionEncoding,
+  "cs3005-unit3-q11": MovInstructionEncoding,
+  "cs3005-unit3-q16": InterruptStackPush,
+  "cs3005-unit3-q18": InterruptVectorTable,
+  "cs3005-unit3-q19": InterruptVectorTable,
+  "cs3005-unit3-q20": InterruptVectorTable,
 
   "sepm-unit-1-q16": SpiralModelDiagram,
   "sepm-unit-1-q30": SpiralModelDiagram,

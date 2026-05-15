@@ -6,6 +6,7 @@ import { questions as daaUnit3Questions } from "@/data/subjects/daa_unit3/questi
 import { questions as linearAlgebraQuestions } from "@/data/subjects/linear-algebra/questions";
 import { questions as mpUnit1Questions } from "@/data/subjects/cs3005-unit1/questions";
 import { questions as mpUnit2Questions } from "@/data/subjects/cs3005-unit2/questions";
+import { questions as mpUnit3Questions } from "@/data/subjects/cs3005-unit3/questions";
 import { sepm_unit_1_questions as sepmUnit1Questions } from "@/data/subjects/sepm-unit-1/questions";
 import { sepm_unit_2_questions as sepmUnit2Questions } from "@/data/subjects/sepm-unit-2/questions";
 
@@ -159,6 +160,14 @@ export const SUBJECT_GROUPS: SubjectGroup[] = [
         title: "Unit 2",
         description: "Interrupts, ARM systems, Arduino, and peripheral interfacing.",
         questions: mpUnit2Questions,
+      },
+      {
+        id: "cs3005-unit3",
+        subjectId: "mp",
+        subjectTitle: "Microprocessor and Embedded Systems",
+        title: "Unit 3",
+        description: "8086 modes, bus cycles, instruction encoding, and interrupt architecture.",
+        questions: mpUnit3Questions,
       },
     ],
   },
