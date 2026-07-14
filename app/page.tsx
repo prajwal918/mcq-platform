@@ -33,7 +33,22 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function DashboardPage() {
-  const subjects = getSubjectGroups();
+  let subjects: ReturnType<typeof getSubjectGroups> = [];
+  
+  try {
+    subjects = getSubjectGroups();
+  } catch (error) {
+    console.error("Failed to load subject groups:", error);
+    return (
+      <main className="flex min-h-screen items-center justify-center bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-slate-50">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-red-600 dark:text-red-400">Application Error</h1>
+          <p className="mt-2 text-slate-600 dark:text-slate-400">Failed to load subject data. Please try again later.</p>
+        </div>
+      </main>
+    );
+  }
+
   const totalUnits = subjects.reduce(
     (count, subject) => count + subject.units.length,
     0
