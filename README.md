@@ -1,3 +1,5 @@
+[![CI](https://github.com/prajwal918/mcq-platform/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/prajwal918/mcq-platform/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 # Engineering MCQ Platform
 
 An elite, production-grade Engineering MCQ platform built with Next.js 14, TypeScript, Tailwind CSS, and Shadcn UI.
